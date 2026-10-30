@@ -1,0 +1,50 @@
+# ---- 构建产物 ----
+# 本仓库 build.ps1|build.sh 与各模块 build 脚本的输出
+dist/
+*/dist/
+# 编译生成的可执行文件（预编译二进制随 wekeapi-skills 仓库分发，不在本仓库）
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go 测试与覆盖率产物
+*.test
+*.out
+coverage.txt
+coverage.html
+
+# ---- 运行时/调试临时文件 ----
+# 数据同步服务配置（含 token / appId，切勿提交）
+wekeapi-msg-sync.json
+# 数据同步服务的 SQLite 库、PID 与日志
+*.db
+*.db-wal
+*.db-shm
+*.pid
+*.log
+# 登录二维码等临时响应
+qr_resp.json
+tmp/
+temp/
+
+# ---- 环境与密钥 ----
+.env
+.env.*
+!.env.example
+
+# ---- 本地工具目录 ----
+.wekeapi/
+
+# ---- IDE / 编辑器 ----
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---- 操作系统 ----
+.DS_Store
+Thumbs.db
+desktop.ini

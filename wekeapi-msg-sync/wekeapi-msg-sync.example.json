@@ -1,0 +1,8 @@
+{
+  "token": "xxxx-xxx-xxx-xxx-xxx",
+  "appId": "xxxxxxxxxxxxxxxxxxxx",
+  "baseURL": "https://api.wekeapi.com/api",
+  "wxid": "wxid_xxxxx",
+  "port": 3006,
+  "db_path": "./wekeapi_msg_sync.db"
+}
