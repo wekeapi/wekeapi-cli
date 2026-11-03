@@ -28,8 +28,8 @@ var (
 // proxyDownloads 按下载根地址拼接各平台代理工具下载信息。
 func proxyDownloads(base string) []ProxyDownload {
 	return []ProxyDownload{
-		{Platform: "Windows x64", URL: base + "/wekeapi-proxy_v1.0.2_windows_amd64.zip"},
-		{Platform: "Windows ARM64", URL: base + "/wekeapi-proxy_v1.0.2_windows_arm64.zip"},
+		{Platform: "Windows x64", URL: base + "/wekeapi-proxy_v1.1.0_windows_amd64.zip"},
+		{Platform: "Windows ARM64", URL: base + "/wekeapi-proxy_v1.1.0_windows_arm64.zip"},
 		{Platform: "macOS Intel", URL: base + "/wekeapi-proxy_v1.0.1_mac_amd64.zip"},
 		{Platform: "macOS ARM", URL: base + "/wekeapi-proxy_v1.0.1_mac_arm64.zip"},
 		{Platform: "Linux", URL: base + "/install.sh", Note: "curl -sSL " + base + "/install.sh | sudo bash"},
